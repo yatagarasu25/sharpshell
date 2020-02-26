@@ -10,6 +10,7 @@ namespace SharpShell.Interop
     [Flags]
     public enum SHCONTF
     {
+        None = 0,
         /// <summary>
         /// Windows 7 and later. The calling application is checking for the existence of child items in the folder.
         /// </summary>

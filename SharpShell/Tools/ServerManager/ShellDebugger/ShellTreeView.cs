@@ -613,7 +613,7 @@ namespace ServerManager.ShellDebugger
 
                 //  Enumerate the children, ten at a time.
                 const int batchSize = 10;
-                var pidlArray = Marshal.AllocCoTaskMem(IntPtr.Size * 10);
+                IntPtr pidlArray = Marshal.AllocCoTaskMem(IntPtr.Size * 10);
                 uint itemsFetched;
                 result = WinError.S_OK;
                 do

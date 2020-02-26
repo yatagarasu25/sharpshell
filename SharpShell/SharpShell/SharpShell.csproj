@@ -97,6 +97,8 @@
     <Compile Include="InitializeWithItemServer.cs" />
     <Compile Include="Interop\IInitializeWithItem.cs" />
     <Compile Include="Interop\IShellItem.cs" />
+    <Compile Include="Interop\ITEMIDLIST.cs" />
+    <Compile Include="Interop\SHITEMID.cs" />
     <Compile Include="Interop\SIGDN.cs" />
     <Compile Include="Interop\STATFLAG.cs" />
     <Compile Include="Helpers\Win32Helper.cs" />

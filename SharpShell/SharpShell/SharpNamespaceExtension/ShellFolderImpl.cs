@@ -360,7 +360,7 @@ namespace SharpShell.SharpNamespaceExtension
                 var item = GetChildItem(idList);
 
                 //  Now get the icon. If we don't provide one we'll use the defaults.
-                var icon = item.GetIcon();
+                var icon = item?.GetIcon();
                 if (icon == null)
                 {
                     ProvideDefaultIExtractIcon(item is IShellNamespaceFolder, out ppv);
@@ -841,7 +841,7 @@ IQueryInfo	The cidl parameter can only be one.
                 //  If we are NOT on the last item, we're looking for a folder.
                 if (depth != idList.Ids.Count - 1)
                 {
-                    currentFolder = GetChildFolder(currentFolder, idList.Ids[depth]);
+                    currentFolder = GetChildFolder(currentFolder, idList.Ids[depth]) ?? currentFolder;
                     continue;
                 }
 

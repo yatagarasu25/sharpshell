@@ -8,7 +8,6 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Windows.Forms;
-using Apex.WinForms.Interop;
 using Apex.WinForms.Shell;
 using Microsoft.Win32;
 using SharpShell;
@@ -24,7 +23,6 @@ using SharpShell.SharpIconOverlayHandler;
 using SharpShell.SharpInfoTipHandler;
 using SharpShell.SharpPreviewHandler;
 using SharpShell.SharpThumbnailHandler;
-using SFGAO = Apex.WinForms.Interop.SFGAO;
 
 namespace ServerManager.TestShell
 {
